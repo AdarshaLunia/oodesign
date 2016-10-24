@@ -1,0 +1,22 @@
+ Builder Patterns : 
+     *is an alternative way to construct complex objects. This should be used only when you want to 
+ build different immutable objects using same object building process.
+ 
+ *builder provides you more control over the object creation process and that’s it.
+ 
+ *In one sentence, abstract factory pattern is the answer to "WHAT" and the builder pattern to "HOW".
+ 
+ *builder pattern will help you to consume additional attributes while retaining the immutability of Use class.
+ 
+ *String builder and String Buffere are the good example.
+ 
+ *StringBuilder builder = new StringBuilder("Temp");
+  String data = builder.append(1)
+                .append(true)
+                .append("friend")
+                .toString();
+  System.out.println(data);
+
+Output:
+Temp1truefriend
+

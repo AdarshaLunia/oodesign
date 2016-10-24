@@ -1,0 +1,20 @@
+In general we follow below steps to create a singleton class:
+
+1:Override the private constructor to avoid any new object creation with new operator.
+2:Declare a private static instance of the same class
+3:Provide a public static method that will return the singleton class instance variable. If the variable is not initialized then initialize it or else simply return the instance variable.
+
+
+There are two ways to achieve Thread-Safety :
+1: Synchronized getInstance()
+2: Synchronized Block inside for-loop
+
+
+Various Approach to create Singleton
+
+Eager initialization
+Lazy initialization
+Static block initialization
+Bill pugh solution
+Using Enum
+While Using Serialization : Adding readResolve(),Adding serial version id

@@ -1,0 +1,13 @@
+Factory Method
+
+*Define an interface for creating an object, but let subclasses decide which class to instantiate. 
+ Factory Method lets a class defer instantiation to subclasses.
+*Defining a "virtual" constructor.
+*The new operator considered harmful.
+
+*The advantage of a Factory Method is that it can return the same instance multiple times, or can return 
+a subclass rather than an object of that exact type.
+
+*The new operator considered harmful. There is a difference between requesting an object and creating one. The new operator always creates an object, and fails
+ to encapsulate object creation. A Factory Method enforces that encapsulation, and allows an object to be 
+ requested without inextricable coupling to the act of creation.
